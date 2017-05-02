@@ -20,6 +20,9 @@
     <!-- Custom styles for this template -->
     <link href="navbar-fixed-top.css" rel="stylesheet">
 	
+	<!-- Other references --->
+	<link href="dist/css/contactform.css" rel="stylesheet">-->
+	<script src="dist/js/myJS.js"></script>
 	
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -48,9 +51,32 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class = "active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class = "active"><a href="about.html">About</a></li>
+            <li> <a onclick = "div_show()" role ="button">Contact</a></li>
+			<!--<li><a href="contact.html">Contact US</a></li>-->
+			<body id="body" style="overflow:hidden;">
+		
+		<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+		<!-- Contact Us Form -->
+	<form action="#" id="form" method="post" name="form">
+		
+		
+		<h2>Contact Us</h2>
+	
+		<a id = "close" role ="button" class="btn btn-lg btn-success" onclick ="div_hide()"> X </a>
+		<hr>
+		<input id="name" name="name" placeholder="Name" type="text">
+		<input id="email" name="email" placeholder="Email" type="text">
+		<textarea id="msg" name="message" placeholder="Message"></textarea>
+		<a href="javascript:%20check_empty()" class="btn btn-lg btn-success" role= "button" style ="width:100%;text-align:center;" >Send</a>
+		
+		
+		</form>
+
+		</div>
             <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
