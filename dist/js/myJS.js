@@ -15,3 +15,20 @@ document.getElementById('abc').style.display = "block";
 function div_hide(){
 document.getElementById('abc').style.display = "none";
 }
+
+function number () {
+var randomNumber = Math.floor(Math.random() * 5 ) + 1;
+
+var guess = prompt('I am thinking of a random number between 1 and 5. What is it?');
+
+if (parseInt(guess) === randomNumber ) {
+
+  alert('You guessed the number!');
+  
+}  else {
+
+
+  alert('Sorry. The number was ' + randomNumber + '');
+
+}	
+}
