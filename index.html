@@ -76,7 +76,24 @@
 		<input id = "email" autocapitalize= "off" autocorrect="off" autofocus="autofocus" placeholder = "Email" class="form-control input-block" id="login_field" name="email" tabindex="1" type="text">
 		<textarea id="msg" name="message" placeholder="Message"></textarea>
 		<a href="javascript:%20check_empty()" class="btn btn-lg btn-success" role= "button" style ="width:100%;text-align:center;" >Send</a>
-		</form>
+		<script>
+      function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      }
+      function checkInputBox() {
+        var email = document.getElementById( 'email' ).value;
+        var style = document.getElementById( '0xff' ).style; /* 'style' is an object of element with the id '0xff' */
+        var valid = validateEmail( email );
+        /* upate border of s1 */
+        if (valid == true) {
+          style.border = "2px solid #00ff00";
+        } else {
+          style.border = "2px solid #ff0000";
+        }
+      }
+    </script>
+			 </form>
 		</div>
 		
     <!--<a class="close-reveal-modal base-7">×</a>
