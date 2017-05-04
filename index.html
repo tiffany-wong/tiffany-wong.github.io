@@ -48,15 +48,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Triggerdog</a>
+          <a class="navbar-brand" href="index.html">Tiffany</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li class = "active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <!--<li><a href="contact.html">Contact</a></li> -->
 			<!--<li><a href="contact.html">Contact US</a></li>-->
-			<li> <a onclick = "div_show()" role ="button">Contact</a></li>
+			
+			<li> <a onclick = "div_show()" role ="button"><b>Contact</b></a></li>
 			<!--<li><a href="contact.html">Contact US</a></li>-->
 			<body id="body" style="overflow:hidden;">
 		
@@ -65,15 +66,44 @@
 		<div id="popupContact">
 		<!-- Contact Us Form -->
 		<form action="#" id="form" method="post" name="form">
-		<h2>Contact Us</h2>
-		<a id = "close" role ="button" class="btn btn-lg btn-success" onclick ="div_hide()"> X </a>
+		<h2><center>Contact Us</center></h2>
+		<a id = "close" role ="button" class="btn btn-lg btn-success" onclick ="div_hide()" >X</a>
+
 		<hr>
-		<input id="name" name="name" placeholder="Name" type="text">
-		<input id="email" name="email" placeholder="Email" type="text">
+
+		 <div>
+		<input id = "name" class="form-control input-block" id="login_field" name="name" placeholder = "Name" tabindex="1" type="text">
+		<input id = "email" autocapitalize= "off" autocorrect="off" autofocus="autofocus" placeholder = "Email" class="form-control input-block" id="login_field" name="email" tabindex="1" type="text">
 		<textarea id="msg" name="message" placeholder="Message"></textarea>
 		<a href="javascript:%20check_empty()" class="btn btn-lg btn-success" role= "button" style ="width:100%;text-align:center;" >Send</a>
 		</form>
 		</div>
+		
+    <!--<a class="close-reveal-modal base-7">×</a>
+    <div class="row">
+        <div class="small-12 columns small-centered text-center">
+            <h2 class="base-7 bold">Contact Us</h2>
+        </div>
+    </div>
+
+    <div class="row small-padding-top">
+        <div class="medium-12 columns text-center">
+            <div class="button-1 button-facebook">
+                <div onclick="facebookLogin(0, false);" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" scope="email,user_education_history">Sign in with Facebook</div>
+            </div>
+
+            <p class="xsmall-padding-top xsmall-padding-bottom base-7">or</p>
+
+
+            <form accept-charset="UTF-8" action="/users/verify" id="login_dialog_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="G1j9nWNnWRIb7VE2eQ5BEES1BfUJ8PlUfL0gWthrA8I=" type="hidden"></div>
+                <input id="url_last" name="url[last]" value="/dashboard" type="hidden">
+                <input id="user_email" name="user[email]" placeholder="Email" size="30" type="email">
+                <input id="user_password" name="user[password]" placeholder="Password" size="30" type="password">
+
+</form>
+
+    
+
 
 			<!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -100,7 +130,8 @@
     <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class = "home-callout text-center container-fluid">
+	  <div class = "jumbotron">
         <h1>Welcome!</h1>
         <p>Hi there! Thanks for dropping by!</p>
         <p>We do hope you enjoy your visit here.</p>
@@ -113,9 +144,16 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Make Money</h2>
-          <p> Got stuff or services that you can offer? Click the button below and we'll let you know how to get involved.</p>
-          <p><a class="btn btn-success" href="index.html" role="button">START SELLING! &raquo;</a></p>
+          <h2>Bored right now?</h2>
+          <p> Then, try and guess a number from 1 to 5. </p>
+          <p><a class="btn btn-success" href="javascript:%20number()" role="button">Click HERE! &raquo;</a></p>
+        </div>
+		 <div id="modal" class="modal">
+            <span class="close">×</span>
+            <div class="modal-content" id="resume">
+                <img src="assets/img/IMG_0036.png">
+            </div>
+            <div id="caption"></div>
         </div>
         <div class="col-md-4">
           <h2>Spread the Word</h2>
@@ -129,7 +167,7 @@
         </div>
 <div class = "container">
 <!-- Rows -->
-<div class = "row">
+<!--<div class = "row">
 <div class = "col-md-6">
 <h2> Video </h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QSMCo92bsTU?controls=1&showinfo=0&autoplay=1&rel=0&border=0" frameborder="0"></iframe>
@@ -141,8 +179,8 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QSMCo92bsTU?controls=1&showinfo=0&autoplay=1&rel=0&border=0" frameborder="0"></iframe>
 </div>
   </div>
-    </div> <!-- /container -->
-<div class = "jumbotron">
+    </div>-->
+<!--<div class = "jumbotron">
 <table class="table">
   <thead>
     <tr>
