@@ -32,3 +32,19 @@ if (parseInt(guess) === randomNumber ) {
 
 }	
 }
+      function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      }
+      function checkInputBox() {
+        var email = document.getElementById( '0xff' ).value;
+        var style = document.getElementById( '0xff' ).style; /* 'style' is an object of element with the id '0xff' */
+        var valid = validateEmail( email );
+        /* upate border of s1 */
+        if (valid == true) {
+          style.border = "2px solid #00ff00";
+        } else {
+          style.border = "2px solid #ff0000";
+        }
+      }
+
