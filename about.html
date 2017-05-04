@@ -71,7 +71,7 @@
 		<a id = "close" role ="button" class="btn btn-lg btn-success" onclick ="div_hide()"> X </a>
 		<hr>
 		<input id="name" name="name" placeholder="Name" type="text">
-		<input id="email" name="email" placeholder="Email" type="text">
+		<input id="email" onkeyup ="javascript:checkInputbox()" name="email" placeholder="Email" type="text">
 		<textarea id="msg" name="message" placeholder="Message"></textarea>
 		<a href="javascript:%20check_empty()" class="btn btn-lg btn-success" role= "button" style ="width:100%;text-align:center;" >Send</a>
 		
