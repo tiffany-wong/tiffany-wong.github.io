@@ -6,7 +6,7 @@ function check_empty() {
 	} else if ( isEmailOk()== false && isNameOk() == false ) {
 		document.getElementById("email").style.border = "2px solid #ff0000";
 		document.getElementById("name").style.border = "2px solid #ff0000";
-		return false;
+		
 	} else if (isEmailOk() == false ) {
 		document.getElementById("email").style.border = "2px solid #ff0000";
 		alert("Invalid Email");
