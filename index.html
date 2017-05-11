@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>CS 1220 Website </title>
+    <title>About Us</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,12 +19,11 @@
 
     <!-- Custom styles for this template -->
     <link href="navbar-fixed-top.css" rel="stylesheet">
-
-	<!--Other ref -->
-	<link href="dist/css/contactform.css" rel="stylesheet">
+	
+	<!-- Other references --->
+	<link href="dist/css/contactform.css" rel="stylesheet">-->
 	<script src="dist/js/myJS.js"></script>
-
-
+	
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
@@ -33,10 +32,10 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  </head>
     <![endif]-->
+  </head>
 
-  <body >
+  <body>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -51,62 +50,34 @@
           <a class="navbar-brand" href="index.html">Tiffany</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class = "active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <!--<li><a href="contact.html">Contact</a></li> -->
-			<!--<li><a href="contact.html">Contact US</a></li>-->
-
-			<li> <a onclick = "div_show()" role ="button"><b>Contact</b></a></li>
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li class = "active"><a href="about.html">About</a></li>
+            <li> <a onclick = "div_show()" role ="button">Contact</a></li>
 			<!--<li><a href="contact.html">Contact US</a></li>-->
 			<body id="body" style="overflow:hidden;">
-
+		
 		<div id="abc">
 		<!-- Popup Div Starts Here -->
 		<div id="popupContact">
 		<!-- Contact Us Form -->
-		<form action="" id="form" method="get" name="form">
-		<h2><center>Contact Us</center></h2>
-		<a id = "close" role ="button" class="btn btn-lg btn-success" onclick ="div_hide()" >X</a>
-
-		<hr>
-
-		 <div>
-		<input id = "name" class="form-control input-block" id="login_field" name="name" placeholder = "Name" tabindex="1" type="text">
- 		<input id = "email" autocapitalize= "off" autocorrect="off" autofocus="autofocus" placeholder = "Email" class="form-control input-block" id="login_field" name="email" tabindex="1" type="text">
-		<textarea id="msg" name="message" placeholder="Message"></textarea>
-		<a href="javascript:check_empty()" class="btn btn-lg btn-success" role= "button" style ="width:100%;text-align:center;" >Send</a>
+	<form action="#" id="form" method="post" name="form">
+		
+		
+		<h2>Contact Us</h2>
 	
-			 </form>
+		<a id = "close" role ="button" class="btn btn-lg btn-success" onclick ="div_hide()"> X </a>
+		<hr>
+		<input id="name" name="name" placeholder="Name" type="text">
+		<input id="email" name="email" placeholder="Email" type="text">
+		<textarea id="msg" name="message" placeholder="Message"></textarea>
+		<a href="javascript:%20check_empty()" class="btn btn-lg btn-success" role= "button" style ="width:100%;text-align:center;" >Send</a>
+		
+		
+		</form>
+
 		</div>
-
-    <!--<a class="close-reveal-modal base-7">×</a>
-    <div class="row">
-        <div class="small-12 columns small-centered text-center">
-            <h2 class="base-7 bold">Contact Us</h2>
-        </div>
-    </div>
-
-    <div class="row small-padding-top">
-        <div class="medium-12 columns text-center">
-            <div class="button-1 button-facebook">
-                <div onclick="facebookLogin(0, false);" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" scope="email,user_education_history">Sign in with Facebook</div>
-            </div>
-
-            <p class="xsmall-padding-top xsmall-padding-bottom base-7">or</p>
-
-
-            <form accept-charset="UTF-8" action="/users/verify" id="login_dialog_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="G1j9nWNnWRIb7VE2eQ5BEES1BfUJ8PlUfL0gWthrA8I=" type="hidden"></div>
-                <input id="url_last" name="url[last]" value="/dashboard" type="hidden">
-                <input id="user_email" name="user[email]" placeholder="Email" size="30" type="email">
-                <input id="user_password" name="user[password]" placeholder="Password" size="30" type="password">
-
-</form>
-
-
-
-
-			<!--<li class="dropdown">
+            <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
@@ -120,7 +91,7 @@
             </li>-->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <!--<li><a href="../navbar/">Default</a></li>
+             <!--<li><a href="../navbar/">Default</a></li>
             <li><a href="../navbar-static-top/">Static top</a></li>
             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>-->
           </ul>
@@ -131,98 +102,20 @@
     <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class = "home-callout text-center container-fluid">
-	  <div class = "jumbotron">
-        <h1>Welcome!</h1>
-        <p>Hi there! Thanks for dropping by!</p>
-        <p>We do hope you enjoy your visit here.</p>
-        <p>
-          <a class="btn btn-lg btn-success" href="about.html" role="button">About Us! &raquo;</a>
-        </p>
-
+      <div class="jumbotron">
+        <h1>About Us</h1>
+        <p>Welcome to the website!!</p>
+        <p>This started out as a project but it will turn into something much more.</p>
+        <!--<p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">About Us! &raquo;</a>
+        </p>-->
       </div>
-<div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Bored right now?</h2>
-          <p> Then, try and guess a number from 1 to 5. </p>
-          <p><a class="btn btn-success" href="javascript:%20number()" role="button">Click HERE! &raquo;</a></p>
-        </div>
-		 <div id="modal" class="modal">
-            <span class="close">×</span>
-            <div class="modal-content" id="resume">
-                <img src="assets/img/IMG_0036.png">
-            </div>
-            <div id="caption"></div>
-        </div>
-        <div class="col-md-4">
-          <h2>Spread the Word</h2>
-          <p>Want to bring this initiative to your school or institution?  Awesome!  Click the button below and we'll make it happen.</p>
-          <p><a class="btn btn-success" href="about.html" target="_blank" role="button">REFER A FRIEND &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Get Involved!</h2>
-          <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding.  Click to get involved.</p>
-          <p><a class="btn btn-success" href="contact.html" role="button">GET INVOLVED &raquo;</a></p>
-        </div>
-<div class = "container">
-<!-- Rows -->
-<!--<div class = "row">
-<div class = "col-md-6">
-<h2> Video </h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QSMCo92bsTU?controls=1&showinfo=0&autoplay=1&rel=0&border=0" frameborder="0"></iframe>
-</div>
 
-<div class = "row">
-<div class = "col-md-6">
-<h2> Video </h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QSMCo92bsTU?controls=1&showinfo=0&autoplay=1&rel=0&border=0" frameborder="0"></iframe>
-</div>
-  </div>
-    </div>-->
-<!--<div class = "jumbotron">
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Top Three (3) Sellers</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>John</td>
-      <td>@johntran</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>@jake</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Tiff Wong</td>
-      <td>@tif</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    </div> <!-- /container -->
 
-<h2> Hottest Items to Sell </h2>
-<ul class="list-group">
-  <li class="list-group-item">Textbooks
-   <span class="badge">10</span> </li>
-  <li class="list-group-item">Art
-   <span class="badge">14</span> <li>
-  <li class="list-group-item">Shoes
-  <span class="badge">15</span> </li>
-</ul>
-
-	<footer class="footer">
+<footer class="footer">
       <div class="container">
-        <span class="text-muted">&copy; Copyright 2017 | <a href= "index.html">Tiffany Wong from CS1220 </a></span>
+        <span class="text-muted"> &copy; Copyright 2017 | <a href= "index.html">Tiffany Wong from CS1220 </a></span>
       </div>
     </footer>
     <!-- Bootstrap core JavaScript
