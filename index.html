@@ -163,8 +163,8 @@
        </div>
 	      
         <div class="col-md-4">
-          <h2>Show Time!</h2>
-          <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding.  Click to get involved.</p>
+          <h2>Don't wait!</h2>
+		<p> Now's the time. Just because it is now <b><span id="displayDate"></span></b> doesn't mean it's too late. Click to get involved.</p>
           <p><a class="btn btn-success" href="myFunction()" role="button">GET INVOLVED &raquo;</a></p>
         </div>
 <script>
@@ -179,8 +179,8 @@
 	if (minutes < 10) {
 	 minutes = "0" + minutes;
   }
+	document.getElementById('displayDate').innerHTML = (day + "/" + month + "/" + year + "  " + hours + ":" + minutes);
 
-	document.write(day + "/" + month + "/" + year + "  " + hours + ":" + minutes)
 </script>	      
 
 
