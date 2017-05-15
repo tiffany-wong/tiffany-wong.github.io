@@ -161,16 +161,29 @@
           <p>Want to bring this initiative to your school or institution?  Awesome!  Click the button below and we'll make it happen.</p>
           <p><a class="btn btn-success" href="about.html" target="_blank" role="button">REFER A FRIEND &raquo;</a></p>
        </div>
+	      
         <div class="col-md-4">
           <h2>Show Time!</h2>
           <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding.  Click to get involved.</p>
           <p><a class="btn btn-success" href="myFunction()" role="button">GET INVOLVED &raquo;</a></p>
         </div>
-	      
+<script>
+  var currentDate = new Date(),
+      day = currentDate.getDate(),
+      month = currentDate.getMonth() + 1,
+      year = currentDate.getFullYear();
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
 
-	<script> function myFunction(){
-document.getElementById("demo").innerHTML = new Date();
-</script>
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	document.write(day + "/" + month + "/" + year + "  " + hours + ":" + minutes)
+</script>	      
+
+
 
 <!-- Rows -->
 <!--<div class = "row">
