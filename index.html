@@ -202,12 +202,12 @@
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 	<script>
 $(document).ready(function(){
-    $("button").click(function(){
-        $("#panel").slideDown(1000);
+    $("form").submit(function(){
+        alert("Thank you for signing up!");
     });
 });
 </script>
-	  <button>Submit</button><br><br>
+	  <input type="submit" value="Submit">
 	  <div style="width:80px;height:80px;"> Thank you for signing up </div>
   </div>
   </form></center>
