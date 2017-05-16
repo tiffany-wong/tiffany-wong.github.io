@@ -190,7 +190,14 @@
 <!-- Form Name -->
 <legend>Sign Up Form </legend>
 <center><form action = "">
-<div style="width:80px;height:80px;"> Let's Get Started </div>
+	<script>
+$(document).ready(function(){
+    $("form").submit(function(){
+        alert("Thank you for signing up!");
+    });
+});
+</script>
+
   <div class="form-group">
   <label for="Name1">Name</label>
   <input type="name" class="form-control" id="Name1" placeholder="Name">
@@ -201,14 +208,9 @@
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-	<script>
-$(document).ready(function(){
-    $("form").submit(function(){
-        alert("Thank you for signing up!");
-    });
-});
-</script>
+	
 	  <input type="submit" value="Submit">
+	  <div style="width:80px;height:80px;"> Let's Get Started </div>
 	  
   </div>
   </form></center>
