@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-
+    
     <title>CS 1220 Website </title>
 
     <!-- Bootstrap core CSS -->
@@ -23,7 +23,11 @@
 	<!--Other ref -->
 	<link href="dist/css/contactform.css" rel="stylesheet">
 	<script src="dist/js/myJS.js"></script>
-
+<link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -52,12 +56,13 @@
         </div>
         <div id="navbar" class="navbar-collapse inverse collapse">
           <ul class="nav navbar-nav navbar-right">
+             
             <li class = "active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <!--<li><a href="contact.html">Contact</a></li> -->
 			<!--<li><a href="contact.html">Contact US</a></li>-->
 
-			<li role ="presentation"> <a onclick = "div_show()" role ="button"><b>Contact</b></a></li>
+			<li role ="presentation"> <a onclick = "div_show()" role ="button"><b>Contact</b></a></li> 
 			<!--<li><a href="contact.html">Contact US</a></li>-->
 			<body id="body" style="overflow:hidden;">
 
@@ -80,6 +85,7 @@
 			 </form>
 		</div>
 
+ 
     <!--<a class="close-reveal-modal base-7">×</a>
     <div class="row">
         <div class="small-12 columns small-centered text-center">
@@ -135,7 +141,7 @@
 	  <div class = "jumbotron">
         <h1>Welcome!</h1>
         <p>Hi there! Thanks for dropping by!</p>
-        <p>We do hope you enjoy your visit here.</p>
+        <p>It's time to start selling</p>
         <p>
           <a class="btn btn-lg btn-success" href ="#signup" role="button">Sign up today! &raquo;</a>
         </p>
@@ -199,6 +205,17 @@ $(document).ready(function(){
 </script>
 
   <div class="form-group">
+  <script>
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>
   <label for="Name1">Name</label>
   <input type="name" class="form-control" id="Name1" placeholder="Name">
     <label for="exampleInputEmail1">Email address</label>
@@ -208,11 +225,26 @@ $(document).ready(function(){
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-	
+	<p><label for="age">Your age: </label><input id="age" title="We ask for your age only for statistical purposes."></p>
+ <script>
+  $( function() {
+    $( "input" ).checkboxradio();
+  } );
+  </script>
+  <fieldset>
+    <center>How did you hear about us?</center>
+    <label for="checkbox-1">Social Media</label>
+    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+    <label for="checkbox-2">Other</label>
+    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+  </fieldset>
+</head>
+<body>
+ 
+<div id="slider"></div>
+
+
 	  <input type="submit" value="Submit">
-	  <div style="width:80px;height:80px;"> Let's Get Started </div>
-	  
-  </div>
   </form></center>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <style>
