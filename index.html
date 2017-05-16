@@ -137,10 +137,10 @@
         <p>Hi there! Thanks for dropping by!</p>
         <p>We do hope you enjoy your visit here.</p>
         <p>
-          <a class="btn btn-lg btn-success" href="#" target="_blank" role="button">Sign up today! &raquo;</a>
+          <a class="btn btn-lg btn-success" href ="#signup" role="button">Sign up today! &raquo;</a>
         </p>
-
       </div>
+	  
 <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -168,7 +168,7 @@
 		<i class="fa fa-dollar fa-5x"></i>
           <h2>Don't wait!</h2>
 		<p> There is money to be made here. It is now <b><span id="displayDate"></span></b>! What are you waiting for? Click to get started.</p>
-          <p><a class="btn btn-success" href="myFunction()" role="button">GET STARTED &raquo;</a></p>
+          <p><a class="btn btn-success" href="#signup" role="button">GET STARTED &raquo;</a></p>
         </div>
 <script>
   var currentDate = new Date(),
@@ -184,10 +184,64 @@
   }
 	document.getElementById('displayDate').innerHTML = (month + "/" + day + "/" + year + "  " + hours + ":" + minutes);
 
-</script>	      
+</script>
+</div>
+<section id="signup">
+<!-- Form Name -->
+<legend>Sign Up Form </legend>
+<center><form>
+  <div class="form-group">
+  <label for="Name1">Name</label>
+  <input type="name" class="form-control" id="Name1" placeholder="Name">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	<input type = "submit" value = "submit" method = "get">
+  </div>
+  </form></center>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <style>
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: green; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
 
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+</script>
 <!-- Rows -->
 <!--<div class = "row">
 <div class = "col-md-6">
